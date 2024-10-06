@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.elearning.fragments.HomeFragment"
+        android:label="Courses"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_firstFragment_to_courseDetail"
+            app:destination="@id/courseDetail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseDetail"
+        android:name="com.example.elearning.fragments.CourseDetailFragment"
+        android:label="Course Details"
+        tools:layout="@layout/fragment_course_detail" />
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.elearning.fragments.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/action_cart_to_order_success"
+            app:destination="@id/orderSuccess"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderSuccess"
+        android:name="com.example.elearning.fragments.OrderConfirmFragment"
+        android:label="Order Confirmed"
+        tools:layout="@layout/fragment_order_confirm" />
+
+</navigation>

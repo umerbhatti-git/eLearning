@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">eLearn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="order_msg">We are pleased to inform you that your purchase has been successfully processed. You have enrolled in the following courses:</string>
+    <string name="thank_you">Thank you for your order!</string>
+</resources>

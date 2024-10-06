@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartTask" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primary</item>
+         <item name="colorOnPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="Theme.SmartTask" parent="Base.Theme.SmartTask" />
+
+    <!-- Theme for the splash screen activity -->
+    <style name="Theme.CustomSplashScreen" parent="Theme.Material3.DayNight.NoActionBar" tools:targetApi="s">
+        <item name="android:windowBackground">@color/primary</item>
+        <item name="android:windowSplashScreenBackground" >@color/primary</item>
+        <item name="android:windowSplashScreenAnimationDuration">500</item>
+        <item name="android:statusBarColor" >@android:color/transparent</item>
+        <item name="postSplashScreenTheme">@style/Theme.CustomSplashScreen</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/blue</item>
+    </style>
+
+    <style name="AlertDialogLight" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogButtonStyle</item>
+    </style>
+
+    <style name="AlertDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+</resources>
