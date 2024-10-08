@@ -8,7 +8,7 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="homeFragment">
+                  <entry key="cart">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -17,9 +17,33 @@
                             <option name="y" value="12" />
                           </Point>
                         </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="courseDetail">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="368" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="homeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="368" />
+                          </Point>
+                        </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_firstFragment_to_secondFragment">
+                            <entry key="action_firstFragment_to_courseDetail">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -29,7 +53,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="taskDetail">
+                  <entry key="orderSuccess">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">

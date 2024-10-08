@@ -4,6 +4,6 @@ import com.example.elearning.models.CoursesModel
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("bd31cccb-0d12-42ca-ba07-6b53c2d735b1")
+    @GET("5fc9dda8-cbed-4e57-9c39-855e89dcfbaa")
     suspend fun getData(): CoursesModel
 }

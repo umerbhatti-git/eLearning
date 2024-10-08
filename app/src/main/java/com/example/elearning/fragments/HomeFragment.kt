@@ -47,7 +47,7 @@ class HomeFragment : Fragment(), MainRVAdapter.OnItemClickListener {
                     binding.progressCircular.visibility = View.GONE
                     binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
                     binding.recyclerView.adapter =
-                        MainRVAdapter(it.results, this@HomeFragment)
+                        MainRVAdapter(it.results, this@HomeFragment, requireContext())
                 }
             } catch (e: HttpException) {
                 e.printStackTrace()
